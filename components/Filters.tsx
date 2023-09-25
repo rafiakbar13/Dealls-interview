@@ -12,7 +12,7 @@ interface FiltersProps {
     onFilterChange: (filters: any) => void;
 }
 
-const Filters: React.FC<FiltersProps> = ({ products, onFilterChange }) => {
+const Filters = ({ products, onFilterChange }: FiltersProps) => {
     const [brandFilters, setBrandFilters] = useState<string[]>([]);
     const [categoryFilters, setCategoryFilters] = useState<string[]>([]);
     const [priceRangeFilters, setPriceRangeFilters] = useState<{

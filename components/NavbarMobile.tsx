@@ -3,7 +3,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { FaBars } from 'react-icons/fa'
 import { useMenu } from '@/context/menu';
 import MobileMenu from './MobileMenu';
-import { routes } from '@/app/constant/route';
+import { routes } from '@/constant/route';
 import { usePathname } from 'next/navigation';
 
 const NavbarMobile = () => {

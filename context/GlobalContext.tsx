@@ -25,11 +25,9 @@ const GlobalContext = createContext({
     users: { users: [] }
 });
 
-interface GlobalProviderProps {
-    children: React.ReactNode;
-}
 
-export const GlobalProvider = ({ children }: GlobalProviderProps) => {
+
+export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
     const limit = 5;
     const [skip, setSkip] = useState(0);
     const { data: products } = useSWR(`${PRODUCTS}?limit=${limit}&skip=${skip}`, fetcher);

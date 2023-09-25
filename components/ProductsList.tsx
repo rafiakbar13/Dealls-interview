@@ -13,7 +13,7 @@ interface TableProps {
     products: Product[];
 }
 
-const ProductsList: React.FC<TableProps> = ({ products }) => {
+const ProductsList = ({ products }: TableProps) => {
     return (
         <div className="py-8 w-full overflow-x-auto overflow-hidden">
             <div className="shadow rounded border-b border-gray-200">

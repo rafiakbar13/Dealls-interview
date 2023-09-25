@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import SidebarItem from "./SidebarItem";
-import { routes } from '@/app/constant/route'
+import { routes } from '@/constant/route'
 
 const Sidebar = () => {
     const pathname = usePathname();

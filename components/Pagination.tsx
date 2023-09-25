@@ -8,13 +8,13 @@ interface PaginationProps {
     onPageChange?: (page: number, skip?: number) => void;
 }
 
-const Pagination: React.FC<PaginationProps> = ({
+const Pagination = ({
     currentPage,
     totalPages,
     onPrevClick,
     onNextClick,
     onPageChange,
-}) => {
+}: PaginationProps) => {
     const handlePrevClick = () => {
         if (currentPage > 1) {
             const newPage = currentPage - 1;

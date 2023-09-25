@@ -1,8 +1,9 @@
 'use client'
-export default function Home({ children }: { children: React.ReactNode }) {
+import Landing from "@/components/Landing"
+export default function Home() {
   return (
     <main>
-      {children}
+      <Landing />
     </main>
   )
 }

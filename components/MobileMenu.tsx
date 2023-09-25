@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { MenuProps } from '@/app/constant/type';
+import { MenuProps } from '@/constant/type';
 
 const MobileMenu = ({ label, href, isActive }: MenuProps) => {
 
